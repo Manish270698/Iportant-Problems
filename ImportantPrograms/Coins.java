@@ -5,7 +5,7 @@ public class Coins {
 	static long a[] = new long[100];
 	public static void main(String args[]) throws IOException
 	{
-		BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		long n = 100;
 		long i;
                 
@@ -18,7 +18,7 @@ public class Coins {
 		
                 while(true){
                 try{
-		String s = stdin.readLine();//throws IOException
+		String s = br.readLine();//throws IOException
 		n = Long.parseLong(s);
                 }
                 catch(Exception e){break;} //Breaks the loop when the input is null
